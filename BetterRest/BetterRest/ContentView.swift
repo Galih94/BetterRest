@@ -13,7 +13,7 @@ struct ContentView: View {
     let tomorrowInSecond: Double = 86_400
     var body: some View {
         VStack {
-            DatePicker("Please select Date", selection: $wakeUp, in: Date.now...Date.now.addingTimeInterval(tomorrowInSecond), displayedComponents: .hourAndMinute)
+            DatePicker("Please select Date", selection: $wakeUp, in: Date.now..., displayedComponents: .date)
                 .labelsHidden()
             Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
         }.padding()
