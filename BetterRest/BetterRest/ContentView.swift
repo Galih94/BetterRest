@@ -12,7 +12,7 @@ struct ContentView: View {
     @State private var wakeUp = Date.now
     var body: some View {
         VStack {
-            DatePicker("Please select Date", selection: $wakeUp)
+            DatePicker("Please select Date", selection: $wakeUp, displayedComponents: .date)
                 .labelsHidden()
             Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
         }.padding()
