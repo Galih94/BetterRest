@@ -10,9 +10,10 @@ import SwiftUI
 struct ContentView: View {
     @State private var sleepAmount = 8.0
     @State private var wakeUp = Date.now
+    let tomorrowInSecond: Double = 86_400
     var body: some View {
         VStack {
-            DatePicker("Please select Date", selection: $wakeUp, displayedComponents: .hourAndMinute)
+            DatePicker("Please select Date", selection: $wakeUp, in: Date.now...Date.now.addingTimeInterval(tomorrowInSecond), displayedComponents: .hourAndMinute)
                 .labelsHidden()
             Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
         }.padding()
