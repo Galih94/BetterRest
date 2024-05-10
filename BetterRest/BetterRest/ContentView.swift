@@ -10,12 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var sleepAmount = 8.0
-    @State private var wakeUp = Date.now
+    @State private var wakeUp = defaultWakeTime
     @State private var coffeeAmount = 1
     @State private var alertTitle = ""
     @State private var alertMessage = ""
     @State private var showingAlert = false
     let tomorrowInSecond: Double = 86_400
+    static var defaultWakeTime: Date {
+        var component = DateComponents()
+        component.hour = 5
+        component.minute = 0
+        return Calendar.current.date(from: component) ?? .now
+    }
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: 20) {
