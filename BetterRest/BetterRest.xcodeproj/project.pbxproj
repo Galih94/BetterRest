@@ -11,6 +11,7 @@
 		2A083DD82BE89CB800A3807A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A083DD72BE89CB800A3807A /* ContentView.swift */; };
 		2A083DDA2BE89CB900A3807A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A083DD92BE89CB900A3807A /* Assets.xcassets */; };
 		2A083DDD2BE89CB900A3807A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A083DDC2BE89CB900A3807A /* Preview Assets.xcassets */; };
+		2AE6B9152BEDD6DA00292F48 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2AE6B9142BEDD6DA00292F48 /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2A083DD72BE89CB800A3807A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A083DD92BE89CB900A3807A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A083DDC2BE89CB900A3807A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AE6B9142BEDD6DA00292F48 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SleepCalculator.mlmodel; path = ../../SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2A083DD52BE89CB800A3807A /* BetterRestApp.swift */,
 				2A083DD72BE89CB800A3807A /* ContentView.swift */,
+				2AE6B9142BEDD6DA00292F48 /* SleepCalculator.mlmodel */,
 				2A083DD92BE89CB900A3807A /* Assets.xcassets */,
 				2A083DDB2BE89CB900A3807A /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE6B9152BEDD6DA00292F48 /* SleepCalculator.mlmodel in Sources */,
 				2A083DD82BE89CB800A3807A /* ContentView.swift in Sources */,
 				2A083DD62BE89CB800A3807A /* BetterRestApp.swift in Sources */,
 			);
