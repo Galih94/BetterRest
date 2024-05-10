@@ -25,8 +25,8 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            VStack(spacing: 20) {
-                VStack(spacing: 5) {
+            Form {
+                VStack(alignment: .leading, spacing: 5) {
                     Text("When do you want to wake up?")
                         .font(.headline)
                     DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
@@ -45,7 +45,6 @@ struct ContentView: View {
                     Stepper("\(coffeeAmount) cup(s)", value: $coffeeAmount, in: 1...20)
                 }
             }
-            .padding(16)
             .navigationTitle("Better Rest")
             .toolbar {
                 Button("Calculate") {
